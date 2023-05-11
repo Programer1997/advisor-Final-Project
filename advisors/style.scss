@@ -1,0 +1,217 @@
+$color_1: #edf0f1;
+$color_2: black;
+$color_3: #0088a9;
+$color_4: #17b0d7;
+$color_5: rgb(63, 63, 182);
+$font-family_1: Arial, Helvetica, sans-serif;
+$font-family_2: "Exo", sans-serif;
+$font-family_3: "Exo 2", sans-serif;
+$background-color_1: whitesmoke;
+$background-color_2: rgba(0,136,169,1);
+$background-color_3: rgba(0,136,169,0.8);
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+/**********************************************************************/
+@import "https://fonts.googleapis.com/css2?family=Exo+2:wght@100&family=Exo:ital,wght@1,900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,900&display=swap";
+/* .cont {
+  position: relative;
+  top: 2.6rem;
+  left: 7.3rem;
+}  */
+/*------------------------------------*/
+* {
+	padding: 0;
+	margin: 0;
+	background-color: $background-color_1;
+	font-family: $font-family_1;
+	box-sizing: border-box;
+}
+.heading-img {
+	width: 150px;
+	height: 130px;
+	cursor: pointer;
+	position: relative;
+	left: 2.5%;
+	display: inline-block;
+    border-radius: 40%;
+}
+li {
+	font-family: $font-family_1;
+	font-weight: 500;
+	font-size: 15px;
+	color: $color_1;
+	text-decoration: none;
+}
+a {
+	font-family: $font-family_1;
+	font-weight: 500;
+	font-size: 15px;
+	color: $color_1;
+	text-decoration: none;
+}
+button {
+	font-family: $font-family_1;
+	font-weight: 500;
+	font-size: 15px;
+	color: $color_1;
+	text-decoration: none;
+	padding: 9px 25px;
+	background-color: $background-color_2;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		background-color: $background-color_3;
+	}
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+}
+.nav-links {
+	list-style: none;
+	li {
+		display: inline-block;
+		padding: 0 20px;
+		a {
+			transition: all 0.3s ease 0s;
+			color: $color_2;
+			&:hover {
+				color: $color_3;
+			}
+		}
+	}
+}
+
+
+body { 
+    width: 100%;
+
+    main { 
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        padding: 5%;
+
+
+        .mainMenu { 
+            width: 30%;
+            border-radius: 5%;
+            display: flex;
+            flex-direction: column;
+            
+
+            
+
+            h2 { 
+                color:black;
+                background-color: transparent;
+                font-family: 'Ubuntu', sans-serif;
+                text-transform: capitalize;
+                margin-bottom: 15%;
+
+            }
+            p{ 
+                color: black;
+                background-color: transparent;
+                margin-bottom: 5%;
+                padding: 5%;
+                border-radius: 2%;
+
+            }
+            a {
+                background-color: transparent;
+                text-decoration: none;
+            }
+            :hover p { 
+                background-color:rgb(207,244,252);
+            }
+
+        }
+        .container  {
+            width: 70%;
+            padding-left: 3%;
+            h1 { 
+                text-align: center;
+                font-family: 'Ubuntu', sans-serif;
+              
+                
+            }
+            .selector { 
+                width: 100%;
+                form { 
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin-bottom: 2%;
+                    margin-top: 2%;
+                    select { 
+                        width: 50%;
+
+                    }
+                    button { 
+                        width: 30%;
+
+                    }
+                    
+
+                }
+
+
+            }
+            .patientsContainer { 
+                width: 100%;
+                .card {
+                    width: 100%; 
+                    margin-bottom: 2%;
+                    transition: all 0.4s;
+
+                    .card-header { 
+
+                    }
+                    .card-body { 
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        .info { 
+                            
+
+                        }
+                        .image { 
+                            img { 
+                                
+                                
+
+                            }
+
+                        }
+
+                    }
+
+                }
+                .card:hover { 
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+                
+
+            }
+
+        }
+    }
+}
